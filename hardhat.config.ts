@@ -59,9 +59,13 @@ const config: HardhatUserConfig = {
             [ChainId.HARMONY, { rpcIndex: 0 }],
 
             // testnets
-            [ChainId.FUJI, {}],
-            [ChainId.MUMBAI, {}],
-            [ChainId.FANTOM_TESTNET, {}]
+            [ChainId.RINKEBY, {rpcIndex: 0}],
+            [ChainId.BSC_TESTNET, {rpcIndex: 1}],
+            [ChainId.FUJI, {rpcIndex: 0}],
+            [ChainId.MUMBAI, {rpcIndex: 0}],
+            [ChainId.ARBITRUM_RINKEBY, {rpcIndex: 0}],
+            [ChainId.OPTIMISM_KOVAN, {rpcIndex: 0}],
+            [ChainId.FANTOM_TESTNET, {rpcIndex: 0}]
         ]),
 
         // note: setup a single rpc like this. (be sure to comment out the above)

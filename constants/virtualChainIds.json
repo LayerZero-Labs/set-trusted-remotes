@@ -5,13 +5,5 @@
   "polygon":  109,
   "arbitrum": 110,
   "optimism": 111,
-  "fantom": 112,
-
-  "rinkeby": 10101,
-  "bsc-testnet": 10102,
-  "fuji": 10106,
-  "mumbai": 10109,
-  "arbitrum-rinkeby": 10110,
-  "optimism-kovan": 10111,
-  "fantom-testnet": 10112
+  "fantom": 112
 }

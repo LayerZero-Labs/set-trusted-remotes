@@ -1,0 +1,25 @@
+{
+  "methodName": "setTrustedRemote",
+  "mapName": "trustedRemoteLookup",
+  "ethereum": {
+    "address": ""
+  },
+  "bsc": {
+    "address": ""
+  },
+  "avalanche": {
+    "address": ""
+  },
+  "polygon":  {
+    "address": ""
+  },
+  "arbitrum": {
+    "address": ""
+  },
+  "optimism": {
+    "address": ""
+  },
+  "fantom": {
+    "address": ""
+  }
+}
