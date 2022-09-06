@@ -33,7 +33,9 @@ Very carefully fill out `constants/setTrustedRemoteConfig.json` with the name of
 For example, to enable communcation between below contracts:
 - 0x1234... on chain ID 101 (20 bytes / 42 characters in hex (e.g. 0x1234567890123456789012345678901234567890))
 - 0xabcd... on chain ID 102 (20 bytes)
+
 On chain 101 contract 0x1234..., setTrustedRemote(102, 0xabcd...1234...) (40 bytes)
+
 On chain 102 contract 0xabcd..., setTrustedRemote(101, 0x1234...abcd...) (40 bytes)
 
 3. Call setTrustedRemote() for the ***NEW chainIds*** your contracts need for LayerZero messaging.
