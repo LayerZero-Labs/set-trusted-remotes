@@ -49,3 +49,4 @@ On chain 102 contract 0xabcd..., setTrustedRemote(101, 0x1234...abcd...) (40 byt
 - Swimmer: 114
 - DFK: 115
 - Harmony: 116
+- Moonbeam: 126
