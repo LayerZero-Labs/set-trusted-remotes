@@ -31,10 +31,10 @@ Very carefully fill out `constants/setTrustedRemoteConfig.json` with the name of
 - A ***bytes*** path, which concatinates the ***remote*** and the ***local*** contract address using abi.encodePacked(). 
 
 For example, to enable communcation between below contracts:
-- 0x1234567890123456789012345678901234567890 on chain ID 101
-- 0xabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcde on chain ID 102
-On chain 101 contract 0x1234567890123456789012345678901234567890, setTrustedRemote(102, 0xabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcde1234567890123456789012345678901234567890)
-On chain 102 contract 0xabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcde, setTrustedRemote(101, 0x1234567890123456789012345678901234567890abcdeabcdeabcdeabcdeabcdeabcdeabcdeabcde)
+- 0x1234... on chain ID 101 (20 bytes / 42 characters in hex (e.g. 0x1234567890123456789012345678901234567890))
+- 0xabcd... on chain ID 102 (20 bytes)
+On chain 101 contract 0x1234..., setTrustedRemote(102, 0xabcd...1234...) (40 bytes)
+On chain 102 contract 0xabcd..., setTrustedRemote(101, 0x1234...abcd...) (40 bytes)
 
 3. Call setTrustedRemote() for the ***NEW chainIds*** your contracts need for LayerZero messaging.
 - Ethereum: 101
