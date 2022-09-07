@@ -45,18 +45,15 @@ Very carefully fill out `constants/setTrustedRemoteConfig.json` with the name of
 2. `setTrustedRemote(uint16, bytes)` takes two parameters:
 - ***uint16*** chainId
 
-
-    let remoteChainId = BigNumber.from(remoteId);
+`let remoteChainId = BigNumber.from(remoteId);`
 
 - A ***bytes*** path, which concatinates the ***remote*** and the ***local*** contract address using abi.encodePacked().
 
-
-    let trustedRemote = hre.ethers.utils.solidityPack(['address','address'],[REMOTE_ADDRESS, LOCAL_ADDRESS])
+`let trustedRemote = hre.ethers.utils.solidityPack(['address','address'],[REMOTE_ADDRESS, LOCAL_ADDRESS])`
 
 3. Call setTrustedRemote() for the ***NEW chainIds*** your contracts need for LayerZero messaging.
 
-
-    let tx = await (await contract.connect(wallet).setTrustedRemote(remoteChainId, trustedRemote, {gasPrice: finalGasPrice})).wait()
+`let tx = await (await contract.connect(wallet).setTrustedRemote(remoteChainId, trustedRemote, {gasPrice: finalGasPrice})).wait()`
 
 - Ethereum: 101
 - BNB: 102
