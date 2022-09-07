@@ -66,3 +66,5 @@ Very carefully fill out `constants/setTrustedRemoteConfig.json` with the name of
 - DFK: 115
 - Harmony: 116
 - Moonbeam: 126
+
+#### Note: new chainIds = old chainIds + 100
