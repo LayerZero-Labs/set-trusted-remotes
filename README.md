@@ -1,5 +1,5 @@
 # The Changes
-## User applications on LayerZero are required to whitelist remote contracts as trusted message senders, the trustedRemotes.
+User applications on LayerZero are required to whitelist remote contracts as trusted message senders, the trustedRemotes.
 
 In ULN (Ultra-light Node) V2, the trusted remote has been changed to the full path, which concatinates the ***remote*** and the ***local*** contract address using abi.encodePacked().
 
