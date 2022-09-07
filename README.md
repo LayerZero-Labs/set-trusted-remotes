@@ -26,11 +26,20 @@ Very carefully fill out `constants/setTrustedRemoteConfig.json` with the name of
 # Manual
 1. Each contract built on LayerZero has a function, `setTrustedRemote(uint16, bytes)` (or something similar), which specifies its trusted contracts. You will have already set your trusted remotes once. You will need to do this again with the new format for addresses.
 
+
 2. `setTrustedRemote(uint16, bytes)` takes two parameters:
 - ***uint16*** chainId
+
+`let remoteChainId = BigNumber.from(remoteId);`
+
 - A 40-byte ***bytes***, which is the abi.encode()’ed ***remote*** plus ***local*** contract address.
 
+`let trustedRemote = hre.ethers.utils.solidityPack(['address','address'],[REMOTE_ADDRESS, LOCAL_ADDRESS])`
+
 3. Call setTrustedRemote() for the ***NEW chainIds*** your contracts need for LayerZero messaging.
+
+`let tx = await (await contract.connect(wallet).setTrustedRemote(remoteChainId, trustedRemote, {gasPrice: finalGasPrice})).wait()`
+
 - Ethereum: 101
 - BNB: 102
 - Avalanche: 106
