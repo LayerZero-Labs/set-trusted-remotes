@@ -1,5 +1,5 @@
 # The Changes
-User applications on LayerZero are required to whitelist remote contracts as trusted message senders, the trustedRemotes.
+## User applications on LayerZero are required to whitelist remote contracts as trusted message senders, the trustedRemotes.
 
 In ULN (Ultra-light Node) V2, the trusted remote has been changed to the full path, which concatinates the ***remote*** and the ***local*** contract address using abi.encodePacked().
 
@@ -10,6 +10,22 @@ For example,
 On chain 101 contract 0x1234..., setTrustedRemote(102, 0xabcd...1234...) (40 bytes)
 
 On chain 102 contract 0xabcd..., setTrustedRemote(101, 0x1234...abcd...) (40 bytes)
+
+## New ChainID
+
+- Ethereum: 101
+- BNB: 102
+- Avalanche: 106
+- Polygon: 109
+- Arbitrum: 110
+- Optimism: 111
+- Fantom: 112
+- Swimmer: 114
+- DFK: 115
+- Harmony: 116
+- Moonbeam: 126
+
+#### Note: new chainIds = old chainIds + 100
 
 # The Hows
 
@@ -54,17 +70,3 @@ Very carefully fill out `constants/setTrustedRemoteConfig.json` with the name of
 3. Call setTrustedRemote() for the ***NEW chainIds*** your contracts need for LayerZero messaging.
 
 `let tx = await (await contract.connect(wallet).setTrustedRemote(remoteChainId, trustedRemote, {gasPrice: finalGasPrice})).wait()`
-
-- Ethereum: 101
-- BNB: 102
-- Avalanche: 106
-- Polygon: 109
-- Arbitrum: 110
-- Optimism: 111
-- Fantom: 112
-- Swimmer: 114
-- DFK: 115
-- Harmony: 116
-- Moonbeam: 126
-
-#### Note: new chainIds = old chainIds + 100
