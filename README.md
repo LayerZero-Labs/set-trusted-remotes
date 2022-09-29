@@ -11,7 +11,21 @@ On chain 101 contract 0x1234..., setTrustedRemote(102, 0xabcd...1234...) (40 byt
 
 On chain 102 contract 0xabcd..., setTrustedRemote(101, 0x1234...abcd...) (40 bytes)
 
-## New ChainIDs
+## New Mainnet ChainIDs
+
+- Ethereum: 101
+- BNB: 102
+- Avalanche: 106
+- Polygon: 109
+- Arbitrum: 110
+- Optimism: 111
+- Fantom: 112
+- Swimmer: 114
+- DFK: 115
+- Harmony: 116
+- Moonbeam: 126
+
+## New Testnet ChainIDs
 
 - Goerli (Ethereum Testnet): 10121
 - BNB Chain (Testnet): 10102
@@ -28,7 +42,7 @@ On chain 102 contract 0xabcd..., setTrustedRemote(101, 0x1234...abcd...) (40 byt
 
 # The Hows
 
-Modify your dApp to testnet ULNv2 by calling setTrustedRemote in one of two ways:
+Modify your dApp to ULNv2 by calling setTrustedRemote in one of two ways:
 
 1. Script
 2. Manual Update
