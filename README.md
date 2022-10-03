@@ -36,6 +36,7 @@ On chain 102 contract 0xabcd..., setTrustedRemote(101, 0x1234...abcd...) (40 byt
 - Fantom (Testnet): 10112
 - Swimmer (Testnet): 10130
 - DFK (Testnet): 10115
+- Dexalot (Testnet): 10118
 - Harmony (Testnet): 10133
 - Moonbeam (Testnet): 10126
 - Celo (Testnet): 10125
