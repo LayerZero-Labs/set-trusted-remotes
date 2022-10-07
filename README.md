@@ -11,35 +11,9 @@ On chain 101 contract 0x1234..., setTrustedRemote(102, 0xabcd...1234...) (40 byt
 
 On chain 102 contract 0xabcd..., setTrustedRemote(101, 0x1234...abcd...) (40 bytes)
 
-## New Mainnet ChainIDs
+## [New Mainnet ChainIDs](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids)
 
-- Ethereum: 101
-- BNB: 102
-- Avalanche: 106
-- Polygon: 109
-- Arbitrum: 110
-- Optimism: 111
-- Fantom: 112
-- Swimmer: 114
-- DFK: 115
-- Harmony: 116
-- Moonbeam: 126
-
-## New Testnet ChainIDs
-
-- Goerli (Ethereum Testnet): 10121
-- BNB Chain (Testnet): 10102
-- Fuji (Avalanche Testnet): 10106
-- Mumbai (Polygon Testnet): 10109
-- Arbitrum-Goerli (Testnet): 10143
-- Optimism-Goerli (Testnet): 10132
-- Fantom (Testnet): 10112
-- Swimmer (Testnet): 10130
-- DFK (Testnet): 10115
-- Dexalot (Testnet): 10118
-- Harmony (Testnet): 10133
-- Moonbeam (Testnet): 10126
-- Celo (Testnet): 10125
+## [New Testnet ChainIDs](https://layerzero.gitbook.io/docs/technical-reference/testnet/testnet-addresses)
 
 # The Hows
 
