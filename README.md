@@ -11,9 +11,12 @@ On chain 101 contract 0x1234..., setTrustedRemote(102, 0xabcd...1234...) (40 byt
 
 On chain 102 contract 0xabcd..., setTrustedRemote(101, 0x1234...abcd...) (40 bytes)
 
+# ChainIDs
+
 ## [New Mainnet ChainIDs](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids)
 
 ## [New Testnet ChainIDs](https://layerzero.gitbook.io/docs/technical-reference/testnet/testnet-addresses)
+
 
 # The Hows
 
