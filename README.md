@@ -1,7 +1,7 @@
 # The Changes
 User applications on LayerZero are required to whitelist remote contracts as trusted message senders, the trustedRemotes.
 
-In ULN (Ultra-light Node) V2, the trusted remote has been changed to the full path, which concatinates the ***remote*** and the ***local*** contract address using abi.encodePacked().
+In ULN (Ultra-light Node) V2, the trusted remote has been changed to the full path, which concatenates the ***remote*** and the ***local*** contract address using abi.encodePacked().
 
 For example,
 - 0x1234... on chain ID 101 (20 bytes / 42 characters in hex (e.g. 0x1234567890123456789012345678901234567890))
@@ -54,7 +54,7 @@ Very carefully fill out `constants/setTrustedRemoteConfig.json` with the name of
 
 `let remoteChainId = BigNumber.from(remoteId);`
 
-- A ***bytes*** path, which concatinates the ***remote*** and the ***local*** contract address using abi.encodePacked().
+- A ***bytes*** path, which concatenates the ***remote*** and the ***local*** contract address using abi.encodePacked().
 
 `let trustedRemote = hre.ethers.utils.solidityPack(['address','address'],[REMOTE_ADDRESS, LOCAL_ADDRESS])`
 
